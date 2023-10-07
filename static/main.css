@@ -1,4 +1,5 @@
 body {
+    text-align: center;
     color: #DCD7C9;
     background-color: #2C3639;
 }
@@ -8,6 +9,23 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+}
+
+#container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+.ex {
+    text-align: end;
+    width: 500px;
+    border-bottom: #DCD7C9 solid 3px;
+    border-right: #DCD7C9 solid 3px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 label {

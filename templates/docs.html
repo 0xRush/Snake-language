@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <title>طريقة الإستخدام</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid d-flex flex-row-reverse">
+          <a class="navbar-brand" href="{{ url_for('home') }}">لغة الثعبان</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="{{ url_for('docs') }}">طريقة الاستخدام</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <h1 style="margin-top: 10px;">مرحبا بك في صفحة التعليمات</h1>
+
+    <div id="container2">
+        <div class="ex">
+            <h2>:اضافة متغير</h2>
+            <p>متغير ب = 1</p>
+            <h3>:النتيجة</h3>
+            <p>1</p>
+        </div>
+        <div class="ex">
+            <h2>:(من - الى) التكرار</h2>
+            <p>من ب = 1 الى 5 اذن 123</p>
+            <h3>:النتيجة</h3>
+            <p>[123, 123, 123, 123]</p>
+            <hr>
+            <p>من ب = 10 الى 0 خطوة -2 اذن متغير نتيجة = نتيجة * ب</p>
+            <h3>:النتيجة</h3>
+            <p>[10, 80, 480, 1920, 3840]</p>
+            <hr>
+            <p>من ج = 1 الى 6 خطوة 1 اذن متغير نتيجة = نتيجة * ب<p>
+            <h3>:النتيجة</h3>
+            <p>[2, 4, 8, 16, 32]</p>
+        </div>
+        <div class="ex">
+            <h2>:دالة اطبع</h2>
+            <p>اطبع(ا , ب) -> ا + ب</p>
+            <p>اطبع(5 , 4)</p>
+            <h3>:النتيجة</h3>
+            <p>9</p>
+        </div>
+        <div class="ex">
+            <h2>:العبارات الشرطية</h2>
+            <h3>(اذا - اذن)</h3>
+            <p>اذا 5 == 5 اذن 123</p>
+            <h4>:النتيجة</h4>
+            <p>123</p>
+            <hr>
+            <h3>(اذا - اذن - دون_ذلك)</h3>
+            <p>اذا 4 == 5 اذن 123 دون_ذلك 321</p>
+            <h4>:النتيجة</h4>
+            <p>321</p>
+            <hr>
+            <h3>(اذا - دون_ذلك_اذا - دون_ذلك)</h3>
+            <p>اذا 4 == 5 اذن 1 دون_ذلك_اذا 4 == 4 اذن 2 دون_ذلك 3</p>
+            <h4>:النتيجة</h4>
+            <p>2</p>
+        </div>
+        <div class="ex">
+            <h2>:صفوف متعددة</h2>
+            <p>1 + 1; 5 * 2; 3 / 3;</p>
+            <h3>:النتيجة</h3>
+            <p>[2, 10, 1.0]</p>
+            <hr>
+            <p>من ج = 1 الى 6 خطوة 1 اذن متغير نتيجة = نتيجة * ب; متغير ن = 10</p>
+            <h3>:النتيجة</h3>
+            <p>[[64, 128, 256, 512, 1024], 10]</p>
+        </div>
+        <div class="ex">
+            <h2>:الدوال المدمجة</h2>
+            <p>طباعة(10)</p>
+            <h3>:النتيجة</h3>
+            <p>10</p>
+            <hr>
+            <p>متغير العمر = ادخال_عدد_صحيح()</p>
+            <p>10</p>
+            <h3>:النتيجة</h3>
+            <p>العمر</p>
+            <p>10</p>
+            <hr>
+            <p>متغير قائمة = [1 , 2 , 3]</p>
+            <h3>:النتيجة</h3>
+            <p>[1, 2, 3]</p>
+            <hr>
+            <p>اضف(قائمة,4)</p>
+            <h3>:النتيجة</h3>
+            <p>[1, 2, 3, 4]</p>
+        </div>
+        <div class="ex">
+            <h2>:برنامج بسيط</h2>
+            <p>متغير ن = ادخال_عدد_صحيح()</p>
+            <p>متغير مضروب = 1</p>
+            <p>من ب = ن الى 0 خطوة -1 اذن متغير مضروب = مضروب * ب</p>
+            <p>طباعة(مضروب)</p>
+            <h3>:النتيجة</h3>
+            <p>3628800</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
