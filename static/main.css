@@ -1,6 +1,6 @@
 body {
-    color: white;
-    background-color: #202020;
+    color: #DCD7C9;
+    background-color: #2C3639;
 }
 
 #container {
@@ -13,13 +13,13 @@ body {
 label {
     width: 100%;
     text-align: right;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 textarea {
     resize: none;
     border: none;
-    color: white;
+    color: #DCD7C9;
     text-align: right;
-    background-color: #212529;
+    background-color: #3F4E4F;
 }
