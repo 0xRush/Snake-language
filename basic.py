@@ -906,7 +906,7 @@ class Parser:
 
     def if_expr(self):
         res = ParseResult()
-        all_cases = res.register(self.if_expr_cases('IF'))
+        all_cases = res.register(self.if_expr_cases('اذا'))
         if res.error: return res
         cases, else_case = all_cases
         return res.success(IfNode(cases, else_case))
@@ -1881,7 +1881,7 @@ class BuiltInFunction(BaseFunction):
         fn = fn.value
 
         try:
-            with open(fn, "r") as f:
+            with open(fn, "r",encoding='utf-8') as f:
                 script = f.read()
         except Exception as e:
             return RTResult().failure(RTError(
